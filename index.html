@@ -12,8 +12,85 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main.css" />
+  <style>
+    .blinking{
+    animation:blinkingText 1.6s infinite;
+  }
+  .blinkingSteve{
+    animation:blinkingImage 4s infinite ease-in-out;
+  }
+@keyframes blinkingText{
+    
+  0%{
+      color: #f00;
+    }
+
+  25%{
+    color: #f40;
+  }
+      
+  50%{
+      color: #f60;
+  }    
+  75%{
+      color: #f40;
+  }
+  100%{
+    color: #f00;
+  }
+    
+}
+@keyframes blinkingImage{
+    
+    0%{
+        opacity: 0.04;
+    }
+    
+    10%{
+        opacity: 0.1;
+    }
+    
+    20%{
+        opacity: 0.14;
+    }
+    
+    30%{
+        opacity: 0.18;
+    }
+    
+    40%{
+        opacity: 0.22;
+    }
+    
+    50%{
+        opacity: 0.26;
+    }
+    
+    60%{
+        opacity: 0.30;
+    }
+    
+    70%{
+        opacity: 0.25;
+    }
+    
+    80%{
+        opacity: 0.20;
+    }
+    
+    90%{
+        opacity: 0.10;
+    }
+    100%{
+        opacity: 0.05;
+    }
+  
+  </style>
   </head>
   <body>
+    <h1 class="blinking">
+      ÞESSI SÍÐA ER Í VINNSLU <span ">!</span>
+    </h1>
     <header>
       <div class="menu-toggler">
         <div class="bar half start"></div>
@@ -51,7 +128,7 @@
     <section class="about" id="about">
       <div class="container">
         <div class="profile-img">
-          <img src="https://ih0.redbubble.net/image.562604402.5385/ap,550x550,16x12,1,transparent,t.png" alt="" />
+          <img class="blinkingSteve" src="https://ih0.redbubble.net/image.562604402.5385/ap,550x550,16x12,1,transparent,t.png" alt="" />
         </div>
         <div class="about-details">
           <div class="about-heading">
