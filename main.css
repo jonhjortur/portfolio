@@ -45,9 +45,9 @@ body {
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
-
-    font-size: 6em;
-
+    text-align: center;
+    font-size: 4em;
+    margin-top: 1em;
     text-decoration: none;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
