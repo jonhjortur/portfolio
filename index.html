@@ -12,289 +12,34 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main.css" />
-  <style>
-    .blinking{
-    animation:blinkingText 1.6s infinite;
-  }
-  .blinkingSteve{
-    animation:blinkingImage 8s infinite ease-in-out;
-  }
-@keyframes blinkingText{
-    
-  0%{
-      color: #111;
-    }
+    <style>
+      .blinkingText {
+        animation: blinkingText 3s infinite ease-in-out;
+      }
+      .steve {
+        opacity: 0.14;
+        animation: steveAnimation 4s infinite ease-in-out;
+      }
 
-  25%{
-    color: #222222;
-  }
-      
-  50%{
-      color: #444444;
-  }    
-  75%{
-      color: #222222;
-  }
-  100%{
-    color: #000000;
-  }
-    
-}
-@keyframes blinkingImage{
-    
-    0%{
-        opacity: 0.24;
-        transform: rotate(0deg);
-    }
-    
-    10%{
-        opacity: 0.24;
-    
-    }
-    
-    20%{
-        opacity: 0.24;
-    }
-    
-    30%{
-        opacity: 0.24;
-        transform: rotate(-30deg);
-    
-    }
-    
-    40%{
-        opacity: 0.24;
-    }
-    
-    50%{
-        opacity: 0.24;
-    }
-    
-    60%{
-        opacity: 0.24;
-    transform: rotate(0deg);
-    }
-    
-    70%{
-        opacity: 0.24;
-    }
-    
-    80%{
-        opacity: 0.24;
-		transform: rotate(20deg);
-    }
-    
-    90%{
-        opacity: 0.24;
-    
-    }
-    100%{
-        opacity: 0.24;
-    }
-}
-  </style>
+      @keyframes steveAnimation {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        50% {
+          transform: rotate(-20deg);
+        }
+      }
+    </style>
   </head>
   <body>
-	  <div id="DELETE">
-		  <h1 class="blinking">
-			ÞESSI SÍÐA ER Í VINNSLU <span>!</span>
-		  </h1>
-		  <img class="blinkingSteve" src="https://ih0.redbubble.net/image.562604402.5385/ap,550x550,16x12,1,transparent,t.png" alt="" />
-	  </div>
-    <header>
-      <div class="menu-toggler">
-        <div class="bar half start"></div>
-        <div class="bar"></div>
-        <div class="bar half end"></div>
-      </div>
-      <nav class="top-nav">
-        <ul class="nav-list">
-          <li>
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li>
-            <a href="#services" class="nav-link">Services</a>
-          </li>
-          <li>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="#experience" class="nav-link">Experience</a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="landing-text">
-        <h1>Jón Hjörtur</h1>
-        <h6>Forrita fyrir kaffi</h6>
-      </div>
-    </header>
-
-    <section class="about" id="about">
-      <div class="container">
-        <div class="profile-img">
-          <img class="" src="https://cdn.ebaumsworld.com/files/dc/poscontest/Shaq1.jpg" alt="" />
-        </div>
-        <div class="about-details">
-          <div class="about-heading">
-            <h1>
-              About
-            </h1>
-            <h6>Myself</h6>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            temporibus tenetur numquam facilis aspernatur expedita nostrum
-            recusandae obcaecati praesentium. Officia assumenda impedit totam
-            consequuntur harum officiis animi in tempore beatae! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="social-media">
-          <ul class="nav-list">
-            <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa-dribbble-square"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Services</h1>
-          <h6>What I can do for you</h6>
-        </div>
-        <div class="my-skills">
-          <div class="skill">
-            <div class="icon-container">
-              <i class="fas fa-layer-group"></i>
-            </div>
-            <h1>Web magic</h1>
-            <p>
-              Some awesome text- Some awesome text- Some awesome text- Some
-              awesome text Some awesome text- Some awesome text- Some awesome
-              text- Some awesome text
-            </p>
-          </div>
-          <div class="skill">
-            <div class="icon-container">
-              <i class="fas fa-code-group"></i>
-            </div>
-            <h1>Programming magic</h1>
-            <p>
-              Some awesome text- Some awesome text- Some awesome text- Some
-              awesome text Some awesome text- Some awesome text- Some awesome
-              text- Some awesome text
-            </p>
-          </div>
-          <div class="skill">
-            <div class="icon-container">
-              <i class="fas fa-chart-group"></i>
-            </div>
-            <h1>Data magic</h1>
-            <p>
-              Some awesome text- Some awesome text- Some awesome text- Some
-              awesome text Some awesome text- Some awesome text- Some awesome
-              text- Some awesome text
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Portfolio</h1>
-          <h6>What I have been doing</h6>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-img">
-            <img
-              src="https://i2.wp.com/the-digital-reader.com/wp-content/uploads/2015/01/5236380180_68810f5ba01.jpg?fit=500%2C500&ssl=1&resize=1280%2C720"
-              alt=""
-            />
-          </div>
-          <div class="portfolio-description">
-            <h6>Some magic</h6>
-            <h1>In JavaScript</h1>
-            <p>
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla
-            </p>
-            <a href="#" class="cta">View details</a>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-description">
-            <h6>Coding magic</h6>
-            <h1>In Python</h1>
-            <p>
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla
-            </p>
-            <a href="#" class="cta">View details</a>
-          </div>
-          <div class="portfolio-img">
-            <img
-              src="https://geoffreymultimedia.com/wp-content/uploads/2008/12/old-computer-new-computer.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="portfolio-img">
-            <img
-              src="https://cdn.britannica.com/31/172531-050-E009D42C/portion-Charles-Babbage-Analytical-Engine-death-mill-1871.jpg"
-              alt=""
-            />
-          </div>
-          <div class="portfolio-description">
-            <h6>Unreal magic</h6>
-            <h1>In React</h1>
-            <p>
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla
-            </p>
-            <a href="#" class="cta">View details</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience" id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Work Experience</h1>
-          <h6>Where I have worked</h6>
-        </div>
-      </div>
-    </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="main.js"></script>
+    <div id="DELETE">
+      <h1 class="blinkingText">ÞESSI SÍÐA ER Í VINNSLU !</h1>
+      <img
+        class="steve"
+        src="https://ih0.redbubble.net/image.562604402.5385/ap,550x550,16x12,1,transparent,t.png"
+        alt=""
+      />
+    </div>
   </body>
 </html>
