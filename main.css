@@ -47,8 +47,8 @@ body {
     animation: neon1 1.5s ease-in-out infinite alternate;
     xtext-align: center;
     font-size: 8em;
-    margin-top: 40px;
-    margin-left: 40px;
+    xmargin-top: 40px;
+    xmargin-left: 40px;
     text-decoration: none;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
