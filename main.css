@@ -14,8 +14,10 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("images/sitebg.png") no-repeat center fixed;
+  background: url("images/termBack.png") no-repeat center fixed;
   background-size: cover;
+  /*To get the comman-line into view*/
+  background-position: top;
 }
 
 a {
@@ -47,6 +49,7 @@ header {
   height: 100vh;
   position: fixed;
   top: -100vh;
+  z-index: 50;
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -67,7 +70,7 @@ li {
 }
 
 .nav-link {
-  font-family: "The Historia Demo", sans-serif; /* DOWNLOAD THIS FONT */
+  font-family: "The Historia Demo", sans-serif; /*LINK TO IT A GOOD FONT...*/
   font-size: 5rem;
   padding: 1rem;
 }
@@ -104,7 +107,6 @@ li {
 }
 
 .bar {
-  xbackground: linear-gradient(to right, #ffe838, #fd57bf);
   background: linear-gradient(to right, #f0f, #0f0);
   width: 100%;
   height: 4px;
@@ -133,9 +135,143 @@ li {
 .open .bar.end {
   transform: rotate(-90deg) translateX(-0.8rem);
 }
+
+.landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.landing-text h1 {
+  font-size: 20rem;
+  font-family: "The Historia Demo", sans-serif; /* ATH FONT*/
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  background-clip: text; /*I think I have to use this for other then V8 browsers*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  user-select: none;
+  animation: getCloser 10s ease-in-out infinite;
+}
+
+.landing-text h1:hover{
+}
+/*PUT ALL KEYFRAMES TOGETHER...OR NOT*/
+@keyframes getCloser {
+  0% {
+    transform: rotateY(-5deg);
+  }
+  12% {
+    transform: rotateX(5deg);
+  }
+  32% {
+    transform: rotateX(10deg);
+  }
+  48% {
+    transform: rotateX(15deg);
+    transform: rotateY(-15deg);
+  }
+  60% {
+    transform: rotateX(25deg);
+  }
+  75% {
+    transform: rotateX(35deg);
+  }
+  100% {
+    transform: rotateX(25deg);
+    transform: rotateY(20deg);
+  }
+  
+  /*50% {
+    font-size: 0.1rem;
+  }*/
+}
+
+.landing-text h6 {
+  font-size: 2rem;
+  font-weight: 300;
+}
 /*End header*/
 
 /*Start about*/
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+  font-size: 10rem;
+  opacity: 0.3;
+}
+
+.about-heading h6 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.profile-img {
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.about-details {
+  flex: 1;
+}
+
+.social-media {
+  margin-top: 5rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
+  transition: rotate 1s;
+}
+
+.fa-facebook-square:hover {
+  color: #4267b2;
+}
+
+.fa-twitter-square:hover {
+  color: #38a1f3;
+}
+
+.fa-github-square {
+}
+
+.fa-github-square:hover {
+  /*WORK ON THIS*/
+  color: #f0f;
+  animation: funkyGithub 4s ease-in;
+  animation-delay: 0.8s;
+}
+/*PUT ALL KEYFRAMES TOGETHER*/
+@keyframes funkyGithub {
+  100% {
+    transform: translateY(2000px) rotate(63deg);
+    color: #888;
+/*  45% {
+    transform: rotate(73deg) translate(12px, 12px);
+    color: #444;
+  }
+  65% {
+    transform: rotate(108deg) translate(12px, 12px);
+  }
+*/
+}
 /*End about*/
 
 /*Start services*/
