@@ -36,6 +36,56 @@ img {
 /*End global*/
 
 /*Start reusable*/
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.section-heading h1 {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section-heading h1::before {
+  width: 10rem;
+  height: 3px;
+  border-radius: .8rem;
+}
+/*Kannski henda þessu bara. Allavega breyta eitthvað*/
+.section-heading h1::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  bottom: -1rem;
+}
+
+.section-heading h6 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
 /*End reusable*/
 
 /*Start header*/
@@ -238,7 +288,6 @@ li {
 .social-media i {
   font-size: 5rem;
   transition: color 650ms;
-  transition: rotate 1s;
 }
 
 .fa-facebook-square:hover {
@@ -249,32 +298,24 @@ li {
   color: #38a1f3;
 }
 
-.fa-github-square {
-}
-
 .fa-github-square:hover {
   /*WORK ON THIS*/
   color: #f0f;
-  animation: funkyGithub 4s ease-in;
+  animation: funkyGithub 2s ease-in;
   animation-delay: 0.8s;
 }
 /*PUT ALL KEYFRAMES TOGETHER*/
 @keyframes funkyGithub {
   100% {
-    transform: translateY(2000px) rotate(63deg);
-    color: #888;
-/*  45% {
-    transform: rotate(73deg) translate(12px, 12px);
-    color: #444;
-  }
-  65% {
-    transform: rotate(108deg) translate(12px, 12px);
-  }
-*/
+    transform: translateY(2000px) rotate(270deg);
 }
 /*End about*/
 
 /*Start services*/
+
+.my-skills {
+
+}
 /*End services*/
 
 /*Start portfolio*/
