@@ -11,6 +11,23 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <!--IN USE-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--NOT IN USE-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--NOT IN USE-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
     <style></style>
   </head>
@@ -30,7 +47,7 @@
             <a href="#about" class="nav-link">About</a>
           </li>
           <li>
-            <a href="#services" class="nav-link">Services</a>
+            <a href="#talents" class="nav-link">Talents</a>
           </li>
           <li>
             <a href="#portfolio" class="nav-link">Portfolio</a>
@@ -44,8 +61,14 @@
         </ul>
       </nav>
       <div class="landing-text">
-        <h1 class="title">Jón Hjörtur</h1>
-        <h6>Forrita fyrir mat</h6>
+        <h1 class="title">
+          [jonh@Asus ~]$<span class="program"
+            >gcc CS/jonhjortur.c -o work<span class="cursor"
+              >&#9608;</span
+            ></span
+          >
+        </h1>
+        <!--h6>Forrita fyrir mat</h6-->
       </div>
     </header>
 
@@ -97,16 +120,16 @@
       </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="talents" id="talents">
       <div class="container">
         <div class="section-heading">
-          <h1>Services</h1>
+          <h1>Talents</h1>
           <h6>What I can do for you</h6>
         </div>
         <div class="my-skills">
           <div class="skill" data-aos="fade-in" data-aos-delay="300">
             <div class="icon-container">
-              <i class="fas fa-layer-group"></i>
+              <i class="fab fa-java"></i>
             </div>
             <h1>Web magic</h1>
             <p>
@@ -137,6 +160,17 @@
               text- Some awesome text
             </p>
           </div>
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
+            <div class="icon-container">
+              <i class="fab fa-java"></i>
+            </div>
+            <h1>Web magic</h1>
+            <p>
+              Some awesome text- Some awesome text- Some awesome text- Some
+              awesome text Some awesome text- Some awesome text- Some awesome
+              text- Some awesome text
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -148,25 +182,40 @@
           <h6>What I have been doing</h6>
         </div>
         <div class="portfolio-item">
-          <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
-              src="https://i2.wp.com/the-digital-reader.com/wp-content/uploads/2015/01/5236380180_68810f5ba01.jpg?fit=500%2C500&ssl=1&resize=1280%2C720"
+              src="/images/thisWebsite.png"
               alt="'Ubs! Hér á að vera mynd!'"
             />
           </div>
-          <div class="portfolio-description has-margin-right" data-aos="fade-left" data-aos-delay="600">
-            <h6>Some magic</h6>
-            <h1>In JavaScript</h1>
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <h6>HTML & CSS</h6>
+            <h1>This website</h1>
             <p>
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-              bla bla bla bla bla bla bla bla bla bla bla bla bla
+              Something about this website...
             </p>
-            <a href="#" class="cta">View details</a>
+            <a
+              href="https://github.com/jonhjortur/jonhjortur.github.io"
+              target="_blank"
+              class="cta"
+              >View on GitHub</a
+            >
           </div>
         </div>
         <div class="portfolio-item">
-          <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="900"
+          >
             <h6>Coding magic</h6>
             <h1>In Python</h1>
             <p>
@@ -184,13 +233,21 @@
           </div>
         </div>
         <div class="portfolio-item">
-          <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="1500"
+          >
             <img
               src="https://cdn.britannica.com/31/172531-050-E009D42C/portion-Charles-Babbage-Analytical-Engine-death-mill-1871.jpg"
               alt=""
             />
           </div>
-          <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="1800"
+          >
             <h6>Unreal magic</h6>
             <h1>In React</h1>
             <p>
@@ -256,7 +313,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="Enter your name..."
+            placeholder="Richard Stallman"
             required
           />
 
@@ -265,18 +322,26 @@
             type="email"
             id="email"
             name="email"
-            placeholder="Enter your email..."
+            placeholder="gnu@fsf.com"
             required
           />
-          <label for="service">Services:</label>
-          <select name="services" id="service">
-            <option>Web design</option>
-            <option>Web development</option>
-            <option>Web magic</option>
-          </select>
+          <!--
+            <label for="regarding">Regarding:</label>
+            <select name="regarding" id="regarding">
+              <option>Programing magic</option>
+              <option>Cure cancer</option>
+              <option>Tell a joke</option>
+            </select>
+          -->
 
           <label for="subject">Subject:</label>
-          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+          <textarea
+            placeholder="THIS IS NOT WORKING."
+            name="subject"
+            id="subject"
+            cols="10"
+            rows="10"
+          ></textarea>
           <input type="submit" value="Submit" />
         </form>
       </div>
