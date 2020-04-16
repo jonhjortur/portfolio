@@ -120,6 +120,8 @@ header {
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  background-size: cover;
+  background-position: top;
 }
 
 .nav-list {
