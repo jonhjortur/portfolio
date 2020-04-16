@@ -11,13 +11,438 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!--IN USE-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
 
+    <!--NOT IN USE-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--NOT IN USE-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!--FOR C++ ICON AND MORE-->
+    <!--DOCS: http://fizzed.com/oss/font-mfizz-->
+    <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css">
+    <link rel="stylesheet" href="main.css" />
+    <style></style>
   </head>
   <body>
-    <div id="DELETE">
-      <h1 class="tempHead">ÞESSI SÍÐA ER Í VINNSLU</h1>
-    </div>
+    <header>
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
+      </div>
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="#talents" class="nav-link">Talents</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="landing-text">
+        <h1 class="title">
+          [jonh@Asus ~]$<span class="program"
+            >gcc CS/jonhjortur.c -o work<span class="cursor"
+              >&#9608;</span
+            ></span
+          >
+        </h1>
+        <!--h6>Forrita fyrir mat</h6-->
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+          <img class="" src="images/rms.jpg" alt="" />
+        </div>
+        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+          <div class="about-heading">
+            <h1>
+              whoami
+            </h1>
+            <!--
+            <h6>Myself</h6>
+          --></div>
+          <div class="whoami">
+            <ul>
+              <li>
+                Jón Hjörtur Brjánsson
+              </li>
+              <li>
+                38 years old
+              </li>
+              <li>
+                Computer scientist from
+                <a
+                  href="https://en.ru.is/st/dcs/undergraduate-study/bsc-computer-science"
+                  target="blank"
+                  >Reykjavik University</a
+                >
+              </li>
+              <li>
+                Father of two girls
+              </li>
+              <li>
+                Owner of a gym-membership
+              </li>
+              <br/>
+              <li class="nobull">
+                Main interests in CS:
+                <ul class="interests">
+                  <li>
+                    Back-end programming
+                  </li>
+                  <li>
+                    Sorting out data and visualizing it
+                  </li>
+                  <li>
+                    Theory and application of algorithms
+                  </li>
+                  <li>
+                    Learning new concepts, languages and framworks
+                  </li>
+                  <li>
+                    Linux and free software
+                  </li>
+                  <li>
+                    Testing (believe it or not!)
+                  </li>
+                  <li>
+                    Front-end design
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.interaction-design.org/literature/topics/human-computer-interaction"
+                      target="blank"
+                      >HCI</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.interaction-design.org/literature/topics/ux-design"
+                      >UX design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <ul class="nav-list">
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+              <div class="funkyGithub">
+                <li>
+                  <a href="#" class="icon-link">
+                    <i class="fab fa-github-square"></i>
+                    
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="talents" id="talents">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Tutorials</h1>
+          <!--
+            <h6>What I can do for you</h6>
+          -->
+          <p class="tutorials-description">
+            I plan on making tutorials in Icelandic on C++, Python and
+            Java soon and probably on JavaScript, React and whatever else later.
+            That has to wait until the COVID pandemic has cooled down and I can
+            get the studio.
+            <br><br/> But why?
+            <ul class="tutorials-description-why">
+              <li>
+                Because when I studied CS I couldn't find any good, no nonsense tutorials
+                in Icelandic on the basics or the more advanced subjects in programming and CS.
+              </li>
+              <li>
+                Because I believe that the best way to learn new skills
+                and sharpen those you have is to teach them.
+              </li>
+              <li>
+                I happen to like teaching so that is a win/win for me.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="my-skills">
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
+            <div class="icon-container">
+              <i class="fab fa-java"></i>
+            </div>
+            <h1>Java...because I need the practice</h1>
+            <p>
+              Something about how awesome Java is, who is the target audience (HR students)
+              and how I'm going to tackle the subject.
+            </p>
+          </div>
+          <!--
+          <div class="skill" data-aos="fade-in" data-aos-delay="600">
+            <div class="icon-container">
+              <i class="fas fa-code"></i>
+            </div>
+
+            <h1>General CS</h1>
+            <p>
+              Some awesome text- Some awesome text- Some awesome text- Some
+              awesome text Some awesome text- Some awesome text- Some awesome
+              text- Some awesome text
+            </p>
+          </div>
+        -->
+          <div class="skill" data-aos="fade-in" data-aos-delay="900">
+            <div class="icon-container">
+              <i class="fab fa-python"></i>
+            </div>
+            <h1>Python and how to think like a programmer</h1>
+            <p>
+              Something about how awesome Java is, who is the target audience (HR students)
+              and how I'm going to tackle the subject.
+            </p>
+          </div>
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
+            <div class="icon-container">
+              <i class="icon-cplusplus"></i>
+            </div>
+            <h1>C++ and computer architecture</h1>
+            <p>
+              Some awesome text- Some awesome text- Some awesome text- Some
+              awesome text Some awesome text- Some awesome text- Some awesome
+              text- Some awesome text
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Portfolio</h1>
+          <h6>What I have been doing</h6>
+        </div>
+        <div class="portfolio-item">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <img
+              src="/images/thisWebsite.png"
+              alt="'Ubs! Hér á að vera mynd!'"
+            />
+          </div>
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <h6>HTML & CSS</h6>
+            <h1>This website</h1>
+            <p>
+              Something about this website...
+            </p>
+            <a
+              href="https://github.com/jonhjortur/jonhjortur.github.io"
+              target="_blank"
+              class="cta"
+              >View on GitHub</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="900"
+          >
+            <h6>React & API</h6>
+            <h1>Veiran</h1>
+            <p>
+              Webapp to visualize how every country is dealing with the COVID-19 pandemic.
+            </p>
+            <a href="#" class="cta">View details</a>
+          </div>
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+            <img
+              src="https://geoffreymultimedia.com/wp-content/uploads/2008/12/old-computer-new-computer.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="1500"
+          >
+            <img
+              src="https://cdn.britannica.com/31/172531-050-E009D42C/portion-Charles-Babbage-Analytical-Engine-death-mill-1871.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="1800"
+          >
+            <h6>React and who knows what</h6>
+            <h1>Tutorial & blog website</h1>
+            <p>
+              Það var einu hverju sinni að Höskuldur hafði vinaboð og þar var Hrútur bróðir hans og sat hið næsta honum. Höskuldur átti sér dóttur er Hallgerður hét. Hún lék sér á gólfi við aðrar meyjar. Hún var fríð sýnum og mikil vexti og hárið svo fagurt sem silki og svo mikið að það tók ofan á belti.
+
+              Höskuldur kallar á hana: "Far þú hingað til mín," sagði hann.
+              
+              Hún gekk þegar til hans. Hann tók undir hökuna og kyssti hana. Síðan gekk hún í braut.
+              
+              Þá ræddi Höskuldur til Hrúts: "Hversu líst þér á mey þessa, þykir þér eigi fögur vera?"
+              
+              Hrútur þagði við. Höskuldur talaði til annað sinn.
+              
+              Hrútur svaraði þá. "Ærið fögur er mær sjá og munu margir þess gjalda. En hitt veit eg eigi hvaðan þjófsaugu eru komin í ættir vorar."
+              
+              Þá reiddist Höskuldur og var fátt um með þeim bræðrum nokkura hríð.
+            </p>
+            <a href="#" class="cta">View details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <h1>What I've been doing</h1>
+          <!--
+            <h6>Where I have worked</h6>
+          -->
+        </div>
+
+        <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+          <ul>
+            <li class="date" data-date="2011 - Present">
+              <h1>Umbrella corp</h1>
+              <p>
+                Einu sinni var ...
+              </p>
+            </li>
+
+            <li class="date" data-date="2008 - 2011">
+              <h1>Duff Beer</h1>
+              <p>
+                Einu sinni var ...
+              </p>
+            </li>
+
+            <li class="date" data-date="2002 - 2007">
+              <h1>Acme Corp.</h1>
+              <p>
+                Einu sinni var ...
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Hafðu samband</h1>
+          <!--
+            <h6>HIRE ME</h6>
+          -->
+        </div>
+        <form action="" data-aos="fade-up" data-aos-delay="300">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Richard Stallman"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="gnu@fsf.com"
+            required
+          />
+          <!--
+            <label for="regarding">Regarding:</label>
+            <select name="regarding" id="regarding">
+              <option>Programing magic</option>
+              <option>Cure cancer</option>
+              <option>Tell a joke</option>
+            </select>
+          -->
+
+          <label for="subject">Subject:</label>
+          <textarea
+            placeholder="This does not work...for now. But it will. I promise. I will make it work!!"
+            name="subject"
+            id="subject"
+            cols="10"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="copyright">
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2020 Jón Hjörtur</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
