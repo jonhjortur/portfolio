@@ -7,7 +7,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   color: #eee;
 }
 
@@ -64,19 +64,20 @@ img {
 
 .section-heading h1::before,
 .section-heading h1::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -.5rem;
+  bottom: -0.5rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.75);
 }
-
+/*
 .section-heading h1::before {
   width: 10rem;
   height: 3px;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
+*/
 /*
 .section-heading h1::after {
   width: 1.5rem;
@@ -95,7 +96,11 @@ img {
 }
 
 img {
-  font-size: 2rem;
+  font-size: 2rem; /*For the alt text...if I remember to put any*/
+  border: 1px solid #000;
+  -webkit-box-shadow: 10px 10px 74px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 74px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 74px 3px rgba(0, 0, 0, 0.75);
 }
 /*End reusable*/
 
@@ -111,7 +116,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background-color: #16162d;
+  background: url("images/back.gif");
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -128,6 +133,7 @@ header {
 
 li {
   margin: 0 2rem;
+  font-size: 1.8rem;
 }
 
 .nav-link {
@@ -138,12 +144,6 @@ li {
 .nav-link:hover,
 .nav-list:focus {
   color: green;
-  /*
-  background: linear-gradient(to top, #ffe838, #fd57bf);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-*/
 }
 
 .top-nav.open {
@@ -174,13 +174,13 @@ li {
 }
 
 .bar {
-  background: green;
+  background: rgb(0, 192, 0);
   width: 100%;
   height: 4px;
   border-radius: 8rem;
 }
 
-.open .bar{
+.open .bar {
   background: #ff4444;
 }
 
@@ -188,7 +188,6 @@ li {
   transform-origin: right;
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
 }
-
 
 .open .bar.start {
   transform: rotate(-450deg) translateX(0.8rem) translateY(-2.5rem);
@@ -205,26 +204,26 @@ li {
 }
 
 .landing-text {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  text-align: center;
+  text-align: left;
   z-index: 1;
 }
 
 .landing-text h1 {
   font-size: 5rem;
-  color:#999;
-  letter-spacing: .1rem;
+  color: #999;
+  letter-spacing: 0.1rem;
   padding: 1rem;
   user-select: none;
 }
 
 .landing-text .program {
-  color: green;
+  color: rgb(0, 150, 0);
 }
 /*The blinking cursor is [choose one]: (stolen, borrowed, taken, copied) from here and modified => https://codepen.io/ArtemGordinsky/pen/GnLBq*/
 .cursor {
@@ -236,25 +235,28 @@ li {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     color: transparent;
   }
   50% {
-    color: green;
+    color: rgb(0, 150, 0);
   }
 }
 
 @-moz-keyframes blink {
-  from, to {
+  from,
+  to {
     color: transparent;
   }
   50% {
-    color: green;
+    color: rgb(0, 150, 0);
   }
 }
 
 @-webkit-keyframes blink {
-  from, to {
+  from,
+  to {
     color: transparent;
   }
   50% {
@@ -263,20 +265,22 @@ li {
 }
 
 @-ms-keyframes blink {
-  from, to {
+  from,
+  to {
     color: transparent;
   }
   50% {
-    color: green;
+    color: rgb(0, 150, 0);
   }
 }
 
 @-o-keyframes blink {
-  from, to {
+  from,
+  to {
     color: transparent;
   }
   50% {
-    color: green;
+    color: rgb(0, 150, 0);
   }
 }
 
@@ -296,7 +300,7 @@ li {
 
 .about-heading {
   text-align: center;
-  text-transform: uppercase;
+  xtext-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
 }
@@ -318,6 +322,20 @@ li {
 
 .about-details {
   flex: 1;
+}
+
+.whoami .interests li a {
+  text-decoration-line: underline;
+  font-size: 1.5rem;
+}
+
+.whoami .interests li {
+  font-size: 1.5rem;
+}
+
+.whoami ul li a:hover {
+  text-decoration-line: none;
+  color: rgb(0, 192, 0);
 }
 
 .social-media {
@@ -345,13 +363,23 @@ li {
 }
 /*PUT ALL KEYFRAMES TOGETHER*/
 @keyframes funkyGithub {
-  100% {
-    transform: translateY(2000px) rotate(270deg);
+  30% {
+    transform: rotate(18deg);
+  }
+  70% {
+    transform: rotate(-12deg);
   }
 }
 /*End about*/
 
 /*Start services*/
+
+.tutorials-description {
+  width: 50%;
+  margin-top: 3rem;
+  transform: translateX(50%);
+  text-align: left;
+}
 
 .my-skills {
   margin-top: 10rem;
@@ -366,7 +394,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  xpadding: 2rem;
 }
 
 .skill h1 {
@@ -441,7 +469,7 @@ li {
   transition: color 650ms;
 }
 
-.portfolio-description:hover .cta{
+.portfolio-description:hover .cta {
   color: #2f67cd;
 }
 /*End portfolio*/
@@ -465,7 +493,7 @@ li {
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 1rem;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .timeline .date {
@@ -497,7 +525,7 @@ li {
 }
 
 .timeline .date::after {
-  content: '';
+  content: "";
   box-shadow: 0 0 0 4px #fd57bf;
   border-radius: 100%;
   left: -8rem; /*Skewed??*/
@@ -537,7 +565,7 @@ input[type="submit"] {
   background-color: #fd57bf;
   color: #eee;
   padding: 1rem 2rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   transition: background-color 650ms;
 }
@@ -554,7 +582,7 @@ input[type="submit"]:hover {
   width: 100%;
   text-align: center;
   background-color: #151515;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   position: relative;
 }
 
@@ -585,13 +613,13 @@ input[type="submit"]:hover {
 /*Start animations*/
 
 @keyframes pulse {
-  0%{
+  0% {
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
   }
-  70%{
+  70% {
     box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
   }
-  100%{
+  100% {
     box-shadow: 0 0 0 0 rgba(255, 0, 19, 0.99);
     /*box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);*/
   }
@@ -602,7 +630,6 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
   body {
-
     background: url("images/back.gif") no-repeat center fixed;
     background-size: cover;
     /*To get the command-line into view*/
@@ -612,11 +639,11 @@ input[type="submit"]:hover {
   .landing-text h1 {
     font-size: 1.8rem;
   }
-  
+
   .landing-text h6 {
     font-size: 1.8rem;
   }
-  
+
   .nav-list {
     flex-direction: column;
   }
@@ -726,7 +753,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 366px) {
   .landing-text h1 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 /*End media queries*/
