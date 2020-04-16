@@ -324,19 +324,30 @@ li {
   flex: 1;
 }
 
-.whoami .interests li a {
+.whoami li a {
   text-decoration-line: underline;
-  font-size: 1.5rem;
 }
 
 .whoami .interests li {
   font-size: 1.5rem;
 }
 
+.whoami .interests {
+  font-size: 1.5rem;
+}
+
+.interests {
+  margin-top: 1rem;
+}
+
 .whoami ul li a:hover {
   text-decoration-line: none;
   color: rgb(0, 192, 0);
 }
+
+.nobull {
+  list-style-type: none;
+ }
 
 .social-media {
   margin-top: 5rem;
@@ -381,6 +392,17 @@ li {
   text-align: left;
 }
 
+.tutorials-description-why {
+  font-size: 1.5rem;
+  width: 50%;
+  margin-top: 1rem;
+  transform: translateX(50%);
+  text-align: left;
+}
+
+.tutorials-description-why li{
+  font-size: 1.5rem;
+}
 .my-skills {
   margin-top: 10rem;
   display: grid;
