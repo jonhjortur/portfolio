@@ -14,7 +14,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("images/termBack.gif") no-repeat center fixed;
+  background: url("images/termBackDark.png") no-repeat center fixed;
   background-size: cover;
   background-position: top;
 }
@@ -94,14 +94,15 @@ img {
 .has-margin-right {
   margin-right: 5rem;
 }
-
+/*
 img {
-  font-size: 2rem; /*For the alt text...if I remember to put any*/
+  font-size: 2rem; 
   border: 1px solid #000;
   -webkit-box-shadow: 10px 10px 74px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 74px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 74px 3px rgba(0, 0, 0, 0.75);
 }
+*/
 /*End reusable*/
 
 /*Start header*/
@@ -117,7 +118,8 @@ header {
   top: -100vh;
   z-index: 50;
   background: url("images/back.gif");
-  border-bottom-right-radius: 100%;
+  background-position: bottom;
+  border-bottom-right-radius: 10%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
@@ -137,8 +139,8 @@ li {
 }
 
 .nav-link {
-  font-size: 5rem;
-  padding: 1rem;
+  font-size: 3rem;
+  xpadding: 1rem;
 }
 
 .nav-link:hover,
@@ -215,11 +217,11 @@ li {
 }
 
 .landing-text h1 {
-  font-size: 5rem;
-  color: #999;
-  letter-spacing: 0.1rem;
-  padding: 1rem;
-  user-select: none;
+  font-size: 3rem;
+  xcolor: #999;
+  xletter-spacing: 0.1rem;
+  xpadding: 1rem;
+  xuser-select: none;
 }
 
 .landing-text .program {
@@ -296,17 +298,16 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  xflex-direction: column;
 }
 
 .about-heading {
-  text-align: center;
-  xtext-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
 }
 
 .about-heading h1 {
-  font-size: 10rem;
+  font-size: 7rem;
   opacity: 0.3;
 }
 
@@ -324,20 +325,32 @@ li {
   flex: 1;
 }
 
-.whoami li a {
+.above-list li a {
   text-decoration-line: underline;
 }
 
-.whoami .interests li {
-  font-size: 1.5rem;
+.interests li a {
+  text-decoration-line: underline;
 }
 
+.above-list {
+  margin-bottom: 1rem;
+}
+
+.list-heading {
+  margin-bottom: 0.5rem;
+}
+/*
 .whoami .interests {
   font-size: 1.5rem;
 }
-
-.interests {
+*/
+.interest {
   margin-top: 1rem;
+}
+
+.interests li {
+  font-size: 1.5rem;
 }
 
 .whoami ul li a:hover {
@@ -347,7 +360,7 @@ li {
 
 .nobull {
   list-style-type: none;
- }
+}
 
 .social-media {
   margin-top: 5rem;
@@ -370,9 +383,9 @@ li {
   /*WORK ON THIS*/
   color: #f0f;
   animation: funkyGithub 2s ease-in;
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
 }
-/*PUT ALL KEYFRAMES TOGETHER*/
+
 @keyframes funkyGithub {
   30% {
     transform: rotate(18deg);
@@ -395,18 +408,19 @@ li {
 .tutorials-description-why {
   font-size: 1.5rem;
   width: 50%;
-  margin-top: 1rem;
+  xmargin-top: 1rem;
   transform: translateX(50%);
   text-align: left;
 }
 
-.tutorials-description-why li{
+.tutorials-description-why li {
+  xmargin-top: 1rem;
   font-size: 1.5rem;
 }
 .my-skills {
   margin-top: 10rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5rem;
   text-align: center;
 }
@@ -414,7 +428,7 @@ li {
 .skill {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  xjustify-content: center;
   align-items: center;
   xpadding: 2rem;
 }
@@ -427,6 +441,8 @@ li {
 
 .skill p {
   font-size: 1.4rem;
+  width: 70%;
+  text-align: left;
 }
 
 /*DO SOMETHING ABOUT THIS STUFF*/
@@ -560,7 +576,7 @@ li {
 
 /*Start contact*/
 .contact {
-  /*background-color: #221e3f;*/ /*Maby some color??*/
+  /*background-color: #221e3f;*/ /*Maybe some color??*/
 }
 
 form {
@@ -600,11 +616,11 @@ input[type="submit"]:hover {
 
 /*Start footer*/
 
-.copyright {
+.footer {
   width: 100%;
   text-align: center;
   background-color: #151515;
-  padding: 0.8rem 0;
+  padding: 1.8rem 0;
   position: relative;
 }
 
@@ -627,8 +643,22 @@ input[type="submit"]:hover {
   margin: auto;
 }
 
-.copyright p {
+.footer p {
   font-size: 1.3rem;
+}
+
+.github {
+  position: absolute;
+  width: 5rem;
+  xheight: 5rem;
+  font-size: 4rem;
+  bxackground-color: #eee;
+  top: 0.3rem;
+  xright: 5rem;
+  xborder-radius: 100%;
+  xdisplay: flex;
+  xanimation: pulse 2s infinite;
+  xcursor: pointer;
 }
 /*End footer*/
 
@@ -650,88 +680,16 @@ input[type="submit"]:hover {
 
 /*Start media queries*/
 
-@media screen and (max-width: 768px) {
-  body {
-    background: url("images/back.gif") no-repeat center fixed;
-    background-size: cover;
-    /*To get the command-line into view*/
-    background-position: top;
-  }
-
-  .landing-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .landing-text h6 {
-    font-size: 1.8rem;
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
-
-  li {
-    margin: 2rem 0;
-  }
-
-  .nav-link {
-    font-size: 4.5rem;
-  }
-
-  .about-heading h1 {
-    font-size: 8rem;
-  }
-
-  .section-heading h1 {
-    font-size: 3rem;
-  }
-
-  .about-details .nav-list {
-    flex-direction: initial;
-  }
-
-  .about-details li {
-    margin: 0 2rem;
-  }
-
-  .icon-container {
-    width: 7rem;
-    height: 7rem;
-  }
-
-  .icon-container i {
-    font-size: 4rem;
-  }
-
-  .timeline ul {
-    margin: 0 0 0 auto;
-  }
-
-  .timeline .date::before {
-    left: -20rem;
-  }
-
-  .timeline .date::after {
-    left: -5.9rem;
-  }
+@media only screen and (max-width: 600px) {
+  ...;
 }
 
-@media screen and (max-width: 600px) {
-  .menu-toggler {
-    top: 2rem;
-    right: 2rem;
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .container {
+    width: 70%;
   }
-
   .landing-text h1 {
-    font-size: 1.2rem;
-  }
-
-  .landing-text h6 {
-    font-size: 1.4rem;
-  }
-
-  .nav-link {
-    font-size: 3.5rem;
+    font-size: 1.7rem;
   }
 
   .about .container {
@@ -739,7 +697,29 @@ input[type="submit"]:hover {
   }
 
   .profile-img {
-    margin: 0 0 7rem 0;
+    margin-bottom: 5rem;
+  }
+
+  .about-heading h1 {
+    font-size: 5rem;
+  }
+
+  .tutorials-description {
+    width: 90%;
+    transform: translateX(10%);
+  }
+  
+  .tutorials-description-why {
+    width: 90%;
+    transform: translateX(10%);
+  }
+  
+  .my-skills {
+    flex-direction: column;
+  }
+
+  .skill p {
+    width: 60%;
   }
 
   .portfolio-item {
@@ -747,35 +727,167 @@ input[type="submit"]:hover {
   }
 
   .portfolio-img {
-    margin: 0 0 2rem 0;
     order: 1;
   }
 
   .portfolio-description {
-    margin: 0;
     order: 2;
   }
 
-  .timeline p {
-    font-size: 1.6rem;
+  form {
+    width: 95%;
+    margin: 0 auto;
   }
 
-  .timeline .date::before {
-    font-size: 1.4rem;
+.nav-list {
+  flex-direction: column;
+}
+
+  .nav-link {
+    font-size: 3.5rem;
+  }
+
+  .top-nav ul li {
+    height: 7rem;
+  }
+
+ /*This is hacky ... but it works and looks nice*/
+ .menu-toggler {
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1729;
+  transition: transform 650ms ease-out;
+}
+
+ .menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar.half {
+  width: 70%;
+}
+
+.bar {
+  background: rgb(0, 192, 0);
+  width: 70%;
+  height: 4px;
+  border-radius: 8rem;
+}
+
+.open .bar {
+}
+
+.bar.start {
+  transform-origin: right;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+}
+
+.open .bar.start {
+  transform: rotate(-450deg) translateX(.5rem) translateY(-1.8rem);
+}
+
+.bar.end {
+  align-self: flex-start;
+  transform-origin: left;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+
+}
+
+.open .bar.end {
+  transform: rotate(-90deg) translateX(-.4rem) translateY(1.7rem);
+}
+
+ /*Menu toggler tests END*/
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 70%;
+  }
+  .landing-text h1 {
+    font-size: 2rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    margin-bottom: 5rem;
+  }
+
+  .about-heading h1 {
+    font-size: 6rem;
+  }
+
+  .tutorials-description {
+    width: 90%;
+    transform: translateX(10%);
+  }
+  
+  .tutorials-description-why {
+    width: 90%;
+    transform: translateX(10%);
+  }
+  
+  .my-skills {
+    flex-direction: column;
+  }
+
+  .skill p {
+    width: 60%;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img {
+    order: 1;
+  }
+
+  .portfolio-description {
+    order: 2;
   }
 
   form {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
 
-  .up {
-    right: 2rem;
+  .nav-link {
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 366px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 80%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
   .landing-text h1 {
-    font-size: 0.9rem;
+    font-size: 2.5rem;
+  }
+
+  .about-heading h1{
+    font-size: 5rem;
   }
 }
-/*End media queries*/
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1500px) {
+  /*Nothing...I think!*/
+}
