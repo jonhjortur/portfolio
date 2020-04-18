@@ -340,7 +340,7 @@ li {
 
 .list-heading {
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+  xfont-size: 2rem;
 }
 /*
 .whoami .interests {
@@ -449,7 +449,7 @@ li {
 .icon-container i {
   xcolor: #ffe838;
   font-size: 5rem;
-  xmargin: auto;
+  margin: auto;
   xtransform: rotate(-45deg);
 }
 /*End services*/

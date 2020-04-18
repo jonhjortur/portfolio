@@ -29,7 +29,7 @@ $(document).ready(function () {
 
   /*Því að AOS er með vesen á litlum skjáum. */
   if(screen.width < 768) {
-    $('div').attr('data-aos', '');
+    $('div').attr('data-aos', 'fade-in');
   }
   
   AOS.init({
