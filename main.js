@@ -27,6 +27,11 @@ $(document).ready(function () {
     );
   });
 
+  /*Því að AOS er með vesen á litlum skjáum. */
+  if(screen.width < 768) {
+    $('div').attr('data-aos', '');
+  }
+  
   AOS.init({
     easing: "ease",
     duration: 1800,

@@ -670,7 +670,7 @@ input[type="submit"]:hover {
 
 /*Start media queries*/
 
-@media only screen and (min-width:320px) and (max-width: 359px) {
+@media only screen and (max-width:367px)/*and (max-width: 359px)*/ {
   .container {
     width: 80%;
   }
@@ -771,8 +771,61 @@ input[type="submit"]:hover {
   Tekur of mikið pláss og mér finnst það óþarfi
   því maður scroll-ar hvort sem er bara*/
  .menu-toggler {
-  visibility: hidden;
+  xvisibility: hidden;
   }
+
+/*This is hacky ... but it works and looks nice*/
+.menu-toggler {
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1729;
+  transition: transform 650ms ease-out;
+}
+
+ .menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar.half {
+  width: 70%;
+}
+
+.bar {
+  background: rgb(0, 192, 0);
+  width: 70%;
+  height: 4px;
+  border-radius: 8rem;
+}
+
+.open .bar {
+}
+
+.bar.start {
+  transform-origin: right;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+}
+
+.open .bar.start {
+  transform: rotate(-450deg) translateX(.5rem) translateY(-1.8rem);
+}
+
+.bar.end {
+  align-self: flex-start;
+  transform-origin: left;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+
+}
+
+.open .bar.end {
+  transform: rotate(-90deg) translateX(-.4rem) translateY(1.7rem);
+}
 
  /*Menu toggler END*/
 
@@ -783,9 +836,11 @@ input[type="submit"]:hover {
  .up {
    right: 2rem;
  }
+
+
 }
 
-@media only screen and (min-width: 360px) and (max-width: 599px){
+@media only screen and (min-width: 368px) and (max-width: 599px){
   .container {
     width: 80%;
   }
@@ -873,8 +928,63 @@ input[type="submit"]:hover {
   Tekur of mikið pláss og mér finnst það óþarfi
   því maður scroll-ar hvort sem er bara*/
   .menu-toggler {
-    visibility: hidden;
+    xvisibility: hidden;
     }
+
+    /*This is hacky ... but it works and looks nice*/
+ .menu-toggler {
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1729;
+  transition: transform 650ms ease-out;
+}
+
+ .menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar.half {
+  width: 70%;
+}
+
+.bar {
+  background: rgb(0, 192, 0);
+  width: 70%;
+  height: 4px;
+  border-radius: 8rem;
+}
+
+.open .bar {
+}
+
+.bar.start {
+  transform-origin: right;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+}
+
+.open .bar.start {
+  transform: rotate(-450deg) translateX(.5rem) translateY(-1.8rem);
+}
+
+.bar.end {
+  align-self: flex-start;
+  transform-origin: left;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+
+}
+
+.open .bar.end {
+  transform: rotate(-90deg) translateX(-.4rem) translateY(1.7rem);
+}
+
+ /*Menu toggler END*/
 }
 
 
@@ -961,8 +1071,62 @@ input[type="submit"]:hover {
   Tekur of mikið pláss og mér finnst það óþarfi
   því maður scroll-ar hvort sem er bara*/
   .menu-toggler {
-    visibility: hidden;
+    xvisibility: hidden;
     }
+
+    /*This is hacky ... but it works and looks nice*/
+ .menu-toggler {
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1729;
+  transition: transform 650ms ease-out;
+}
+
+ .menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar.half {
+  width: 70%;
+}
+
+.bar {
+  background: rgb(0, 192, 0);
+  width: 70%;
+  height: 4px;
+  border-radius: 8rem;
+}
+
+.open .bar {
+}
+
+.bar.start {
+  transform-origin: right;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+}
+
+.open .bar.start {
+  transform: rotate(-450deg) translateX(.5rem) translateY(-1.8rem);
+}
+
+.bar.end {
+  align-self: flex-start;
+  transform-origin: left;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.5, 0.57);
+
+}
+
+.open .bar.end {
+  transform: rotate(-90deg) translateX(-.4rem) translateY(1.7rem);
+}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
