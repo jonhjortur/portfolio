@@ -4,27 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jón Hjörtur</title>
-        <!--
-
-        -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <!--
+      
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!--IN USE-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+    rel="stylesheet"
     />
-
+    
     <!--FOR C++ ICON AND MORE-->
     <!--DOCS: http://fizzed.com/oss/font-mfizz-->
     <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     <link rel="stylesheet" href="main.css" />
 
   </head>
@@ -339,53 +340,72 @@
     </section>
     
   -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
-          <h1>Hafðu samband</h1>
-          <!--
-            <h6>HIRE ME</h6>
-          -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
+        <h1>Hafðu samband</h1>
+        
+        <!--
         </div>
-        <form action="" data-aos="fade-up" data-aos-delay="150">
-          <label for="name">Name:</label>
+        <form id="contact-form"   action="https://formspree.io/xgeljlpd" method="POST" data-aos="fade-up" data-aos-delay="150">
+          <label for="inputName">Name:</label>
           <input
             type="text"
-            id="name"
+            id="inputName"
             name="name"
             placeholder="Richard Stallman"
             required
           />
 
-          <label for="email">Email:</label>
+          <label for="inputEmail">Email:</label>
           <input
             type="email"
-            id="email"
+            id="inputEmail"
             name="email"
             placeholder="gnu@fsf.com"
             required
           />
-          <!--
             <label for="regarding">Regarding:</label>
             <select name="regarding" id="regarding">
               <option>Programing magic</option>
               <option>Cure cancer</option>
               <option>Tell a joke</option>
             </select>
-          -->
           
-          <label for="subject">Subject:</label>
+          <label for="inputMessage">Subject:</label>
           <textarea
           placeholder="This does not work...for now. But it will. I promise. I will make it work!!"
             name="subject"
-            id="subject"
+            id="inputMessage"
             cols="10"
             rows="10"
             ></textarea>
             <input type="submit" value="Submit" />
+            <input type="hidden" name="_next" value="https://jonhjortur.com/" />
           </form>
       </div>
     </section>
+
+    -->
+<form
+  action="https://formspree.io/xgeljlpd"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+
+  <button type="submit">Send</button>
+  <input type="hidden" name="_next" value="https://jonhjortur.com/" />
+  <input type="text" name="_gotcha" style="display:none" />
+</form>
+
 
     <footer class="footer">
       <!--
@@ -403,7 +423,9 @@
       </p>
       
     </footer>
-
+    
+    <!-- CSS -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
