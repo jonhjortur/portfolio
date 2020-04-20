@@ -318,12 +318,12 @@ li {
 }
 
 .profile-img {
-  flex: 1;
-  margin-right: 5rem;
+  flex: 4;
+  xmargin-right: 5rem;
 }
 
 .about-details {
-  flex: 1;
+  flex: 3;
 }
 
 .above-list li a {
@@ -410,6 +410,7 @@ li {
 .my-skills {
   margin-top: 10rem;
   display: flex;
+  flex-direction: column;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5rem;
   text-align: center;
@@ -431,7 +432,7 @@ li {
 
 .skill p {
   font-size: 1.4rem;
-  width: 70%;
+  width: 40%;
   text-align: left;
 }
 
@@ -1184,6 +1185,7 @@ input[type="submit"]:hover {
   .whoami ul li {
     text-align: center;
   }
+
 
   form {
     width: 95%;
