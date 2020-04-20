@@ -590,6 +590,7 @@ textarea {
   margin-bottom: 5px;
   border: none;
   outline-color: #fd57bf;
+  resize: none;
 }
 
 input[type="submit"] {

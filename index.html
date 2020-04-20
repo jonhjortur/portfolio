@@ -3,29 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jón Hjörtur</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous"
-    />
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <!--IN USE-->
-    <link
-    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-    rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <!--DOCS: https://github.com/michalsnik/aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--DOCS: http://fizzed.com/oss/font-mfizz-->
     <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
-    <link rel="stylesheet" href="main.css" />
+    <title>Jón Hjörtur</title>
   </head>
   <body>
     <header>
       <nav class="top-nav">
-          <div class="menu-toggler">
+        <div class="menu-toggler">
           <div class="bar half start"></div>
           <div class="bar"></div>
           <div class="bar half end"></div>
@@ -43,11 +35,6 @@
           <li>
             <a href="#portfolio" class="nav-link">Verkefni</a>
           </li>
-          <!--
-            <li>
-              <a href="#experience" class="nav-link">Experience</a>
-            </li>
-          -->
           <li>
             <a href="#contact" class="nav-link">Hafðu samband</a>
           </li>
@@ -56,80 +43,64 @@
       <div class="landing-text">
         <h1>
           [jonh@Asus ~]$<span class="program"
-          >gcc CS/jonhjortur.c -o jonhjortur<span class="cursor"
-          >&#9608;</span
-          ></span
-          >
+            >gcc CS/jonhjortur.c -o jonhjortur<span class="cursor"
+            >&#9608;</span
+            ></span
+            >
         </h1>
       </div>
     </header>
-    
-      <section class="about" id="about">
-        <div class="container">
-          <div class="profile-img" data-aos="fade-right" data-aos-delay="100">
-            <img class="" src="images/avatars/jonAvatar.png" alt="" />
+    <section class="about" id="about">
+      <div class="container">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="100">
+          <img class="" src="images/avatars/jonAvatar.png" alt="" />
+        </div>
+        <div class="about-details" data-aos="fade-left" data-aos-delay="300">
+          <div class="about-heading">
+            <h1>./jonhjortur
+            </h1>
           </div>
-          <div class="about-details" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-heading">
-              <h1>./jonhjortur
-              </h1>
+          <p class="whoami">
+          <ul>
+            <div class="above-list">
+              <li>Jón Hjörtur Brjánsson</li>
+              <li>38 ára</li>
+              <li>Tölvunarfræðingur</li>
+              <li>Pabbi tveggja stelpna</li>
+              <li>Eigandi líkamsræktarkorts</li>
             </div>
-            <p class="whoami">
-              <ul>
-                <div class="above-list">
-                  <li>Jón Hjörtur Brjánsson</li>
-                  <li>38 years old</li>
-                  <li>Computer scientist</li>
-                  <li>Father of two girls</li>
-                  <li>Owner of a gym-membership</li>
-                </div>
-                <li class="nobull">
-                  <h4 class="list-heading">Main interests in CS:</h4>
-                  <ul class="interests">
-                    <li>
-                      Back-end programming
-                    </li>
-                    <li>
-                      ...og eitthvað
-                    <li>
-                      <a
-                      href="https://www.interaction-design.org/literature/topics/human-computer-interaction"
-                      target="blank"
-                      >HCI</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                      href="https://www.interaction-design.org/literature/topics/ux-design"
-                      target="blank"
-                      >UX design</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+            <li class="nobull">
+              <h4 class="list-heading">Áhugamál í tölvunarfræði:</h4>
+              <ul class="interests">
+                <li>Bakenda forritun</li>
+                <li>Gagnavinnsla og myndræn framsetning</li>
+                <li>Fræðileg reiknirit</li>
+                <li><a href="https://www.interaction-design.org/literature/topics/human-computer-interaction" target="blank">HCI</a></li>
+                <li><a href="https://www.interaction-design.org/literature/topics/ux-design" target="blank">UX design</a></li>
               </ul>
-            </p>
-            <div class="social-media">
-              <ul class="nav-list">
-              </ul>
-            </div>
+            </li>
+          </ul>
+          </p>
+          <div class="social-media">
+            <ul class="nav-list">
+            </ul>
           </div>
         </div>
-      </section>
-      
-      <section class="talents" id="talents">
+      </div>
+    </section>
+    <section class="talents" id="talents">
       <div class="container">
         <div class="section-heading" data-aos="fade-up" data-aos-delay="300">
           <h1>Tutorials</h1>
           <!--
             <h6>What I can do for you</h6>
-          -->
-            <p class="tutorials-description">
-              I plan on making tutorials in Icelandic on C++, Python and
-              Java soon and probably on JavaScript, React and whatever else later.
-              That has to wait until the COVID pandemic has cooled down and I can
-              get the studio.
-            </p>
+            -->
+          <p class="tutorials-description">
+            I plan on making tutorials in Icelandic on C++, Python and
+            Java soon and probably on JavaScript, React and whatever else later.
+            That has to wait until the COVID pandemic has cooled down and I can
+            get the studio.
+          </p>
         </div>
         <div class="my-skills">
           <div class="skill" data-aos="fade-in" data-aos-delay="300">
@@ -143,19 +114,19 @@
             </p>
           </div>
           <!--
-          <div class="skill" data-aos="fade-in" data-aos-delay="600">
-            <div class="icon-container">
-              <i class="fas fa-code"></i>
+            <div class="skill" data-aos="fade-in" data-aos-delay="600">
+              <div class="icon-container">
+                <i class="fas fa-code"></i>
+              </div>
+            
+              <h1>General CS</h1>
+              <p>
+                Some awesome text- Some awesome text- Some awesome text- Some
+                awesome text Some awesome text- Some awesome text- Some awesome
+                text- Some awesome text
+              </p>
             </div>
-
-            <h1>General CS</h1>
-            <p>
-              Some awesome text- Some awesome text- Some awesome text- Some
-              awesome text Some awesome text- Some awesome text- Some awesome
-              text- Some awesome text
-            </p>
-          </div>
-        -->
+            -->
           <div class="skill" data-aos="fade-in" data-aos-delay="600">
             <div class="icon-container">
               <i class="fab fa-python"></i>
@@ -177,35 +148,33 @@
               text- Some awesome text
             </p>
           </div>
-          
         </div>
       </div>
     </section>
-
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
           <h1>Projects</h1>
           <!--
             <h6>What I have been doing</h6>
-          -->
+            -->
         </div>
         <div class="portfolio-item">
           <div
             class="portfolio-img has-margin-right"
             data-aos="fade-right"
             data-aos-delay="300"
-          >
+            >
             <img
               src="/images/projects/thisWebsite.png"
               alt="'Ubs! Hér á að vera mynd!'"
-            />
+              />
           </div>
           <div
             class="portfolio-description has-margin-right"
             data-aos="fade-left"
             data-aos-delay="450"
-          >
+            >
             <h6>HTML & CSS</h6>
             <h1>This website</h1>
             <p>
@@ -219,210 +188,118 @@
           </div>
         </div>
         <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
+          <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
             <h6>CSS & JavaScript</h6>
             <h1>X/O</h1>
             <p>
-              Þetta er einfaldur TicTacToe-leikur sem ég gerði sem æfingu í CSS og javaScript.<br/>
-              Það er svolítil CSS-leikfimi í þessu sem 4 ára dóttir mín hjálpaði mér með.
-              Leikurinn skalast niður á spjaldtölvur og síma.<br/>
-              Leikreglurnar eru skrifaðar í JavaScript.<br/>
-              Smelltu á myndina til að spila leikinn.
+              Þetta er einfaldur TicTacToe-leikur sem ég gerði sem æfingu í CSS og javaScript.
+              <br/> Það er svolítil CSS-leikfimi í þessu sem 4 ára dóttir mín hjálpaði mér með. Leikurinn skalast niður á spjaldtölvur og síma.
+              <br/> Leikreglurnar eru skrifaðar í JavaScript.
+              <br/> Smelltu á myndina til að spila leikinn.
             </p>
             <a href="https://github.com/jonhjortur/TicTacToeJS/tree/gh-pages" target="blank" class="cta">Sjáðu kóðann á GitHub</a>
           </div>
           <div class="portfolio-img" data-aos="fade-left" data-aos-delay="750">
             <a href="https://jonhjortur.com/TicTacToeJS/" target="blank">
-              <img
-              src="images/projects/tictactoe.png"
-              alt=""
-              />
-            </a> </a>
+            <img src="images/projects/tictactoe.png" alt="" />
+            </a>
+            </a>
           </div>
         </div>
         <div class="portfolio-item">
-          <div
-            class="portfolio-img has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="900"
-          >
-            <img
-              src="https://cdn.britannica.com/31/172531-050-E009D42C/portion-Charles-Babbage-Analytical-Engine-death-mill-1871.jpg"
-              alt=""
-            />
+          <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="900">
+            <img src="https://cdn.britannica.com/31/172531-050-E009D42C/portion-Charles-Babbage-Analytical-Engine-death-mill-1871.jpg" alt="" />
           </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="900"
-          >
+          <div class="portfolio-description" data-aos="fade-left" data-aos-delay="900">
             <h6>React and who knows what</h6>
             <h1>Tutorial & blog website</h1>
             <p>
-              Það var einu hverju sinni að Höskuldur hafði vinaboð og þar var Hrútur bróðir hans og sat hið næsta honum. Höskuldur átti sér dóttur er Hallgerður hét. Hún lék sér á gólfi við aðrar meyjar. Hún var fríð sýnum og mikil vexti og hárið svo fagurt sem silki og svo mikið að það tók ofan á belti.
-
-              Höskuldur kallar á hana: "Far þú hingað til mín," sagði hann.
-              
-              Hún gekk þegar til hans. Hann tók undir hökuna og kyssti hana. Síðan gekk hún í braut.
-              
-              Þá ræddi Höskuldur til Hrúts: "Hversu líst þér á mey þessa, þykir þér eigi fögur vera?"
-              
-              Hrútur þagði við. Höskuldur talaði til annað sinn.
-              
-              Hrútur svaraði þá. "Ærið fögur er mær sjá og munu margir þess gjalda. En hitt veit eg eigi hvaðan þjófsaugu eru komin í ættir vorar."
-              
-              Þá reiddist Höskuldur og var fátt um með þeim bræðrum nokkura hríð.
+              Það var einu hverju sinni að Höskuldur hafði vinaboð og þar var Hrútur bróðir hans og sat hið næsta honum. Höskuldur átti sér dóttur er Hallgerður hét. Hún lék sér á gólfi við aðrar meyjar. Hún var fríð sýnum og mikil vexti og hárið svo fagurt sem silki og svo mikið að það tók ofan á belti. Höskuldur kallar á hana: "Far þú hingað til mín," sagði hann. Hún gekk þegar til hans. Hann tók undir hökuna og kyssti hana. Síðan gekk hún í braut. Þá ræddi Höskuldur til Hrúts: "Hversu líst þér á mey þessa, þykir þér eigi fögur vera?" Hrútur þagði við. Höskuldur talaði til annað sinn. Hrútur svaraði þá. "Ærið fögur er mær sjá og munu margir þess gjalda. En hitt veit eg eigi hvaðan þjófsaugu eru komin í ættir vorar." Þá reiddist Höskuldur og var fátt um með þeim bræðrum nokkura hríð.
             </p>
             <a href="#" target="blank" class="cta">View details</a>
           </div>
         </div>
         <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
+          <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
             <h6>Alskonar æfingar</h6>
             <h1>GitHub</h1>
             <p>
-              Ég er með alskonar stuff á GitHub. T.d. JavaScript leikfimi og eitthvað sem ég gæti notað
-              í kennslumyndböndunum og ég veit ekki hvað og hvað...
+              Ég er með alskonar stuff á GitHub. T.d. JavaScript leikfimi og eitthvað sem ég gæti notað í kennslumyndböndunum og ég veit ekki hvað og hvað...
             </p>
             <a href="https://github.com/jonhjortur" target="blank" class="cta">Mitt Github</a>
           </div>
           <div class="portfolio-img" data-aos="fade-left" data-aos-delay="750">
-            <img
-              src="https://www.amigus.org/wp-content/uploads/2018/06/github-logo.jpg"
-              alt=""
-            />
+            <img src="https://www.amigus.org/wp-content/uploads/2018/06/github-logo.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
-<!--
-
-  <section class="experience" id="experience">
-    <div class="container">
-      <div class="section-heading">
-        <h1>What I've been doing</h1>
+    <!--
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <h1>What I've been doing</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+              <ul>
+                <li class="date" data-date="2011 - Present">
+                  <h1>Umbrella corp</h1>
+                  <p>
+                    Einu sinni var ...
+                  </p>
+                </li>
+      
+                <li class="date" data-date="2008 - 2011">
+                  <h1>Duff Beer</h1>
+                  <p>
+                    Einu sinni var ...
+                  </p>
+                </li>
+      
+                <li class="date" data-date="2002 - 2007">
+                  <h1>Acme Corp.</h1>
+                  <p>
+                    Einu sinni var ...
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      
+      -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
         </div>
-        <div class="timeline" data-aos="fade-down" data-aos-delay="300">
-          <ul>
-            <li class="date" data-date="2011 - Present">
-              <h1>Umbrella corp</h1>
-              <p>
-                Einu sinni var ...
-              </p>
-            </li>
-
-            <li class="date" data-date="2008 - 2011">
-              <h1>Duff Beer</h1>
-              <p>
-                Einu sinni var ...
-              </p>
-            </li>
-            
-            <li class="date" data-date="2002 - 2007">
-              <h1>Acme Corp.</h1>
-              <p>
-                Einu sinni var ...
-              </p>
-            </li>
-          </ul>
-        </div>
+        <form id="contact-form" action="https://formspree.io/xgeljlpd" method="POST" data-aos="fade-up" data-aos-delay="150">
+          <label for="inputName">Nafn:</label>
+          <input type="text" id="inputName" name="name" placeholder="Richard Stallman" required />
+          <label for="inputEmail">Tölvupóstur:</label>
+          <input type="email" id="inputEmail" name="email" placeholder="gnu@fsf.com" required />
+          <!--
+            <label for="regarding">Efni:</label>
+            <select name="regarding" id="regarding">
+              <option>Programing magic</option>
+              <option>Cure cancer</option>
+              <option>Tell a joke</option>
+            </select>
+            -->
+          <label for="inputMessage">Skilaboð:</label>
+          <textarea placeholder="Every decision a person makes stems from the person's values and goals. People can have many different goals and values; fame, profit, love, survival, fun, and freedom, are just some of the goals that a good person might have. When the goal is to help others as well as oneself, we call that idealism." name="subject" id="inputMessage" cols="10" rows="10"></textarea>
+          <input type="submit" value="Submit" />
+          <input type="hidden" name="_next" value="https://jonhjortur.com/" />
+          <input type="text" name="_gotcha" style="display:none" />
+        </form>
       </div>
     </section>
-    
-  -->
-    <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-heading" data-aos="fade-in" data-aos-delay="300">        
-      </div>
-      <form id="contact-form"   action="https://formspree.io/xgeljlpd" method="POST" data-aos="fade-up" data-aos-delay="150">
-        <label for="inputName">Nafn:</label>
-        <input
-        type="text"
-        id="inputName"
-        name="name"
-            placeholder="Richard Stallman"
-            required
-          />
-          
-          <label for="inputEmail">Tölvupóstur:</label>
-          <input
-            type="email"
-            id="inputEmail"
-            name="email"
-            placeholder="gnu@fsf.com"
-            required
-            />
-            <!--
-              <label for="regarding">Efni:</label>
-              <select name="regarding" id="regarding">
-                <option>Programing magic</option>
-                <option>Cure cancer</option>
-                <option>Tell a joke</option>
-              </select>
-            -->
-          
-            <label for="inputMessage">Skilaboð:</label>
-            <textarea
-          placeholder="This does not work...for now. But it will. I promise. I will make it work!!"
-          name="subject"
-          id="inputMessage"
-            cols="10"
-            rows="10"
-            ></textarea>
-            <input type="submit" value="Submit" />
-            <input type="hidden" name="_next" value="https://jonhjortur.com/" />
-            <input type="text" name="_gotcha" style="display:none" />
-          </form>
-        </div>
-      </section>
-                                        <!--
-
-    <form
-    action="https://formspree.io/xgeljlpd"
-    method="POST"
-    >
-    <label>
-      Your email:
-      <input type="text" name="_replyto">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
-    
-    
-    <button type="submit">Send</button>
-    <input type="hidden" name="_next" value="https://jonhjortur.com/" />
-    <input type="text" name="_gotcha" style="display:none" />
-  </form>
--->
-
-
     <footer class="footer">
-      <!--
-
-        <div class="github">
-          <a href="https://github.com/jonhjortur" target="blank" class="icon-link-github">
-            <i class="fab fa-github-square"></i>                    
-          </a>
-        </div>
-      -->
-        <span class="up" id="up">
-        <i class="fas fa-chevron-up"></i>
+      <span class="up" id="up">
+      <i class="fas fa-chevron-up"></i>
       </span>
       <p>&copy; 2020 Jón Hjörtur
       </p>
-      
     </footer>
-    
     <!-- CSS -->
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
