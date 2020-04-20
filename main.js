@@ -37,26 +37,22 @@ $(document).ready(function () {
     duration: 1800,
     //once: true
   });
-  /*
-  $("#contact-form").submit(function (e) {
-    var name = document.getElementById("inputName");
-    var email = document.getElementById("inputEmail");
-    var message = document.getElementById("inputMessage");
-
-    if (!name.value || !email.value || !message.value) {
-      alertify.error("Please check your entries");
-      return false;
-    } else {
-      $.ajax({
-        method: "POST",
-        url: "//formspree.io/jonhjortur@protonmail.com",
-        data: $("#contact-form").serialize(),
-        datatype: "json",
-      });
-      e.preventDefault();
-      $(this).get(0).reset();
-      alertify.success("Message sent");
+  
+/*https://stackoverflow.com/questions/179355/clearing-all-cookies-with-javascript*/
+  (function () {
+    var cookies = document.cookie.split("; ");
+    for (var c = 0; c < cookies.length; c++) {
+        var d = window.location.hostname.split(".");
+        while (d.length > 0) {
+            var cookieBase = encodeURIComponent(cookies[c].split(";")[0].split("=")[0]) + '=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=' + d.join('.') + ' ;path=';
+            var p = location.pathname.split('/');
+            document.cookie = cookieBase + '/';
+            while (p.length > 0) {
+                document.cookie = cookieBase + p.join('/');
+                p.pop();
+            };
+            d.shift();
+        }
     }
-  });
-  */
+})();
 });
