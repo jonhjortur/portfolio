@@ -177,18 +177,41 @@ li {
   transform: rotate(-90deg) translateX(-0.8rem) translateY(2.5rem);
 }
 
-.landing-text {
+.landing-text{
   font-family: "Source Code Pro", monospace;
   position: absolute;
   top: 50%;
   width: 100%;
-  text-align: left;
+  /* text-align: left; */
   z-index: 1;
 }
 
 .landing-text h1 {
   font-size: 3rem;
   padding: 1rem;
+}
+.landing-text a {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.back-after-form {
+  rotate: -8deg;
+  xmargin-left: 5rem;
+  align-self: center;
+}
+
+.back-after-form button {
+  font-size: 6rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  background-color: rgba(192, 192, 192, 0.55);
+  cursor: pointer;
+}
+
+.back-after-form button:hover {
+  background-color: rgba(192, 192, 192, 0.95);
 }
 
 .landing-text .program {
