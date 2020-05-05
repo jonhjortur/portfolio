@@ -263,7 +263,7 @@
       <div class="container">
         <div class="section-heading" data-aos="fade-in" data-aos-delay="300">
         </div>
-        <form id="contact-form" action="POST" data-netlify="true" data-aos="fade-up" data-aos-delay="150">
+        <form name="contact" id="contact-form" method="POST" data-netlify="true" data-aos="fade-up" data-aos-delay="150">
           <label for="inputName">Nafn:</label>
           <input type="text" id="inputName" name="name" placeholder="Richard Stallman" required />
           <label for="inputEmail">Tölvupóstur:</label>
@@ -282,8 +282,6 @@
           <input type="file" name="file-upload" id="file-upload" placeholder="Senda skrá">
           <div data-netlify-recaptcha="true"></div>
           <input type="submit" value="Submit" />
-          <input type="hidden" name="_next" value="https://jonhjortur.com/" />
-          <input type="text" name="_gotcha" style="display:none" />
         </form>
       </div>
     </section>
