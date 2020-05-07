@@ -4,7 +4,7 @@
 
 Ég á líklega ekki eftir að laga hann mikið meira því ég á von á að gera frekar nýja síðu fljótlega.
 
-## Þekkt vandamál í mikilvægisröð:
+## Þekkt vandamál:
 
 1. Vesen í Edge.
 
