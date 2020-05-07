@@ -10,7 +10,4 @@
 
    - Blikkandi cursor er svartur en ekki grænn í Edge.
    - Í **X/0** birtist ekki X...sem er vissuleg hellings vesen!
-   - Ég laga þetta æst þegar ég kveiki á Windows-vél...nema MS verði búið að gefa út Edge á Linux fyrst.
-
-2. Á submit á skilaboðaforminu neðst á síðunni er redirect á formspree.
-   - Ég þarf að finna betri leið til að fá skilboðin frá forminu eða koma í veg fyrir þetta redirect.
+   - Ég laga þetta næst þegar ég kveiki á Windows-vél...
